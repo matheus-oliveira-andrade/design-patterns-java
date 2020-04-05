@@ -7,6 +7,17 @@ public class ExecucaoAbstractFactory {
 	public static void Executar() {
 		try {
 
+			/*
+			 * 
+			 * A intenção deste padrão é fornecer uma interface para criação de famílias de
+			 * objeto relacionados ou dependentes sem especificar suas classes concretas. 
+			 * Também é conhecido como KIT. Este padrão deve ser aplicado quando se deseja
+			 * isolar a aplicação da implementação da classe concreta
+			 * 			 
+			 * https://www.dofactory.com/images/diagrams/net/abstract.gif
+			 * 
+			 */
+			
 			// Cria os veiculos
 			ArrayList<Veiculo> veiculosSocorro = new ArrayList<Veiculo>();
 			veiculosSocorro.add(VeiculoCreator.Criar("Uno sem escada", Porte.Pequeno));

@@ -1,5 +1,6 @@
 package abstractFactory;
 
+//Abstract Produto
 public abstract class Veiculo {
 
 	private String modelo;

@@ -1,5 +1,6 @@
 package abstractFactory;
 
+
 public class GuinchoCreator {
 
 	public static Guincho Criar(Porte porte) throws Exception

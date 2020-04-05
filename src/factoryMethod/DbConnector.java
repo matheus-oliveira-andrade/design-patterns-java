@@ -1,5 +1,6 @@
 package factoryMethod;
 
+//Abstract Produto
 public abstract class DbConnector {
 
 	private String connectionString;

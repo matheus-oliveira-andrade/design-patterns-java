@@ -1,5 +1,6 @@
 package abstractFactory;
 
+//Concrete Factory
 public class SocorroVeiculoMedioFactory extends AutoSocorroFactory {
 
 	@Override

@@ -1,5 +1,6 @@
 package abstractFactory;
 
+//Produto Concreto
 public class GuinchoPequeno extends Guincho {
 
 	public GuinchoPequeno(Porte porte) {

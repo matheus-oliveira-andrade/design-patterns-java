@@ -1,5 +1,6 @@
 package abstractFactory;
 
+// Cliente
 public class AutoSocorro {
 
 	private Veiculo _veiculo;

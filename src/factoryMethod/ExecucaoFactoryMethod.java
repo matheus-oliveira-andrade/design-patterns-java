@@ -5,6 +5,15 @@ public class ExecucaoFactoryMethod {
 	public static void Executar() {
 
 		try {
+			
+			/*
+			 * 
+			 * Definir uma interface para criar um objeto, mas deixar as subclasses decidirem que classe instanciar. 
+			 * O Factory Method permite adiar a instanciação para subclasse
+			 * 	
+			 * https://www.dofactory.com/images/diagrams/net/factory.gif
+			 * 		 
+			 */
 
 			// Get factory do banco passado por parametro
 			DbFactory dbFactoryMySql = DbFactory.Database(DataBase.MySql);
