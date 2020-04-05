@@ -4,6 +4,7 @@ import abstractFactory.ExecucaoAbstractFactory;
 import facade.ExecucaoFacade;
 import factoryMethod.ExecucaoFactoryMethod;
 import iterator.ExecucaoIterator;
+import observer.ExecucaoObserver;
 
 public class Principal {
 
@@ -54,8 +55,8 @@ public class Principal {
 				ExecucaoIterator.Executar();
 				break;
 			case 5:
-				//
-				System.out.println(5);
+				// Observer
+				ExecucaoObserver.Executar();
 				break;				
 			}	
 			
