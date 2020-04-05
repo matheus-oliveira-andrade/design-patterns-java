@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import abstractFactory.ExecucaoAbstractFactory;
+import factoryMethod.ExecucaoFactoryMethod;
 
 public class Principal {
 
@@ -35,12 +36,12 @@ public class Principal {
 			
 			switch (escolha) {
 			case 1:
-				// Abstract factory
+				// Abstract Factory
 				ExecucaoAbstractFactory.Executar();				
 				break;
 			case 2:
-				// 
-				System.out.println(2);
+				// Factory Method
+				ExecucaoFactoryMethod.Executar();
 				break;
 			case 3:
 				//
