@@ -3,6 +3,7 @@ import java.util.Scanner;
 import abstractFactory.ExecucaoAbstractFactory;
 import facade.ExecucaoFacade;
 import factoryMethod.ExecucaoFactoryMethod;
+import iterator.ExecucaoIterator;
 
 public class Principal {
 
@@ -49,8 +50,8 @@ public class Principal {
 				ExecucaoFacade.Executar();
 				break;
 			case 4:
-				//
-				System.out.println(4);
+				// Iterator
+				ExecucaoIterator.Executar();
 				break;
 			case 5:
 				//
