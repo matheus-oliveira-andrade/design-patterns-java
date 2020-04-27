@@ -7,7 +7,7 @@ public class GuinchoMedio extends Guincho {
 	}
 
 	@Override
-	public void Socorrer(Veiculo veiculo) {
+	public void socorrer(Veiculo veiculo) {
 		// Processo de socorro
 		System.out.println("Socorrendo Carro Medio - Modelo " + veiculo.getModelo());
 	}

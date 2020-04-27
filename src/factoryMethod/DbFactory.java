@@ -4,9 +4,9 @@ package factoryMethod;
 public abstract class DbFactory {
 
 	// Factory Method
-	public abstract DbConnector CreateConnector(String connectionString);
+	public abstract DbConnector createConnector(String connectionString);
 
-	public static DbFactory Database(DataBase dataBase) throws Exception {
+	public static DbFactory database(DataBase dataBase) throws Exception {
 
 		switch (dataBase) {
 		case SqlServer:

@@ -5,7 +5,7 @@ public class MySqlFactory extends DbFactory{
 
 	// Factory Method
 	@Override
-	public DbConnector CreateConnector(String connectionString) {
+	public DbConnector createConnector(String connectionString) {
 		return new MySqlConnector(connectionString);		
 	}	
 }

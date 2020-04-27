@@ -11,7 +11,7 @@ public class Album {
 		this.musicas = musicas;
 	}
 
-	public void PrintMusicas() {
+	public void printMusicas() {
 		Iterator iterator = musicas.createIterator();
 
 		System.out.println("Músicas...\n");

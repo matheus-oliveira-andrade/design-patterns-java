@@ -8,7 +8,7 @@ public class Observador implements InterfaceObservador {
 		this.nome = nome;
 	}
 
-	public void Notificar(Investimento investimento) {
+	public void notificar(Investimento investimento) {
 		System.out.println("Notificando " + nome + " que " + investimento.getSimbolo() + " teve preço alterado para "
 				+ investimento.getValor());
 	}

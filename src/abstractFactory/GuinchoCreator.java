@@ -3,7 +3,7 @@ package abstractFactory;
 
 public class GuinchoCreator {
 
-	public static Guincho Criar(Porte porte) throws Exception
+	public static Guincho criar(Porte porte) throws Exception
     {
         switch (porte)
         {

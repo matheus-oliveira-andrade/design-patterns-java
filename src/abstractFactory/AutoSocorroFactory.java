@@ -3,6 +3,6 @@ package abstractFactory;
 //Abstract Factory
 public abstract class AutoSocorroFactory
 {
-    public abstract Guincho CriarGuincho() throws Exception;
-    public abstract Veiculo CriarVeiculo(String modelo, Porte porte) throws Exception;
+    public abstract Guincho criarGuincho() throws Exception;
+    public abstract Veiculo criarVeiculo(String modelo, Porte porte) throws Exception;
 }

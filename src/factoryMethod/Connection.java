@@ -10,18 +10,18 @@ public class Connection {
         this.connectionString = connectionString;
     }
 
-    public void ExecuteCommand(String command)
+    public void executeCommand(String command)
     {
         System.out.println("Executando Commando: " + command);
     }
 
-    public void Open()
+    public void open()
     {
         opened = true;
         System.out.println("Conexão aberta");
     }
 
-    public void Close()
+    public void close()
     {
         System.out.println("Conexão fechada");
     }

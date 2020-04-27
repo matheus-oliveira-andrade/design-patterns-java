@@ -7,7 +7,7 @@ public class SqlServerConnector extends DbConnector {
 	}
 
 	@Override
-	public Connection Connect() {
+	public Connection connect() {
 		System.out.println("Conectando ao banco SQL Server...");
 		return new Connection(getConnectionString());
 	}

@@ -10,7 +10,7 @@ public abstract class Guincho {
         this.porte = porte;
     }
 
-    public abstract void Socorrer(Veiculo veiculo);    
+    public abstract void socorrer(Veiculo veiculo);    
     
     public Porte getPorte() {
 		return porte;

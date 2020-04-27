@@ -9,7 +9,7 @@ public abstract class DbConnector {
 		this.connectionString = connectionString;
 	}
 
-	public abstract Connection Connect();
+	public abstract Connection connect();
 
 	protected String getConnectionString() {
 		return connectionString;

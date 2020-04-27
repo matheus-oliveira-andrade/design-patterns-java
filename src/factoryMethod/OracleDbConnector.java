@@ -7,7 +7,7 @@ public class OracleDbConnector extends DbConnector {
 	}
 
 	@Override
-	public Connection Connect() {
+	public Connection connect() {
 		System.out.println("Conectando ao banco Oracle...");
 		return new Connection(getConnectionString());
 	}

@@ -2,7 +2,7 @@ package factoryMethod;
 
 public class ExecucaoFactoryMethod {
 
-	public static void Executar() {
+	public static void executar() {
 
 		try {
 			
@@ -16,34 +16,34 @@ public class ExecucaoFactoryMethod {
 			 */
 
 			// Get factory do banco passado por parametro
-			DbFactory dbFactoryMySql = DbFactory.Database(DataBase.MySql);
+			DbFactory dbFactoryMySql = DbFactory.database(DataBase.MySql);
 			
 			// retorna uma instancia do connector MySql
-			DbConnector dbConnectorMySql = dbFactoryMySql.CreateConnector("minhaCS");
+			DbConnector dbConnectorMySql = dbFactoryMySql.createConnector("minhaCS");
 			
 			// Abre conexão com o banco
-			Connection mySqlCn = dbConnectorMySql.Connect();
-			mySqlCn.Open();
-			mySqlCn.ExecuteCommand("select * from tabelaMySql");
-			mySqlCn.Close();
+			Connection mySqlCn = dbConnectorMySql.connect();
+			mySqlCn.open();
+			mySqlCn.executeCommand("select * from tabelaMySql");
+			mySqlCn.close();
 
 			System.out.println("");
 			System.out.println("--------------------------------");
 			System.out.println("");
 
-			Connection oracleCn = DbFactory.Database(DataBase.Oracle).CreateConnector("minhaCS").Connect();
-			oracleCn.Open();
-			oracleCn.ExecuteCommand("select * from tabelaOracle");
-			oracleCn.Close();
+			Connection oracleCn = DbFactory.database(DataBase.Oracle).createConnector("minhaCS").connect();
+			oracleCn.open();
+			oracleCn.executeCommand("select * from tabelaOracle");
+			oracleCn.close();
 
 			System.out.println("");
 			System.out.println("--------------------------------");
 			System.out.println("");
 
-			Connection sqlServerCn = DbFactory.Database(DataBase.SqlServer).CreateConnector("MinhaCS").Connect();
-			sqlServerCn.Open();
-			sqlServerCn.ExecuteCommand("select * from tabelaSqlServer");
-			sqlServerCn.Close();
+			Connection sqlServerCn = DbFactory.database(DataBase.SqlServer).createConnector("MinhaCS").connect();
+			sqlServerCn.open();
+			sqlServerCn.executeCommand("select * from tabelaSqlServer");
+			sqlServerCn.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();

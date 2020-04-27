@@ -7,7 +7,7 @@ public class MySqlConnector extends DbConnector {
 	}
 
 	@Override
-	public Connection Connect() {
+	public Connection connect() {
 		System.out.println("Conectando ao banco My Sql...");
 		return new Connection(getConnectionString());
 	}

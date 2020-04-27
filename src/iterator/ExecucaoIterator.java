@@ -2,7 +2,7 @@ package iterator;
 
 public class ExecucaoIterator {
 
-	public static void Executar() {
+	public static void executar() {
 		
 		/*
 		 * 
@@ -17,6 +17,6 @@ public class ExecucaoIterator {
 		
 		CollectionMusica musicas = new CollectionMusica();		
 		Album album = new Album(musicas);		
-		album.PrintMusicas();
+		album.printMusicas();
 	}
 }

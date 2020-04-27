@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ExecucaoAbstractFactory {
 
-	public static void Executar() {
+	public static void executar() {
 		try {
 
 			/*
@@ -29,7 +29,7 @@ public class ExecucaoAbstractFactory {
 
 				// Para cada veiculo cria o guincho especifico e retorna uma instancia de
 				// autoSocorro
-				AutoSocorro autoSocorro = AutoSocorro.CriarAutoSocorro(veiculo);
+				AutoSocorro autoSocorro = AutoSocorro.criarAutoSocorro(veiculo);
 
 				// Realiza o atendimento do veiculo
 				autoSocorro.RealizarAtendimento();

@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ExecucaoObserver {
 
-	public static void Executar() {
+	public static void executar() {
 
 		/*
 		 * 
@@ -22,11 +22,11 @@ public class ExecucaoObserver {
 		PapelBovespa amazon = new PapelBovespa("Amazon", nextFloat());
 		PapelBovespa microsoft = new PapelBovespa("Microsoft", nextFloat());
 
-		amazon.Subscribe(joao);
-		amazon.Subscribe(eduardo);
+		amazon.subscribe(joao);
+		amazon.subscribe(eduardo);
 
-		microsoft.Subscribe(eduardo);
-		microsoft.Subscribe(bill);
+		microsoft.subscribe(eduardo);
+		microsoft.subscribe(bill);
 
 		System.out.println("");
 		System.out.println("------------------");
@@ -37,7 +37,7 @@ public class ExecucaoObserver {
 			microsoft.setValor(nextFloat());
 
 			if (i == 1) {
-				amazon.UnSubscribe(eduardo);
+				amazon.unSubscribe(eduardo);
 			}
 		}
 

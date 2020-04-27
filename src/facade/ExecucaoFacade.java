@@ -20,7 +20,7 @@ public class ExecucaoFacade {
 	 * 
 	 */
 
-	public static void Executar() {
+	public static void executar() {
 
 		BancoContaFacade acessandoBanco = new BancoContaFacade(123456, 1234567);
 

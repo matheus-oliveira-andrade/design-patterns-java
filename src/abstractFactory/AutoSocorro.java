@@ -8,16 +8,16 @@ public class AutoSocorro {
 
     public AutoSocorro(AutoSocorroFactory factory, Veiculo veiculo) throws Exception
     {
-        _veiculo = factory.CriarVeiculo(veiculo.getModelo(), veiculo.getPorte());
-        _guincho = factory.CriarGuincho();
+        _veiculo = factory.criarVeiculo(veiculo.getModelo(), veiculo.getPorte());
+        _guincho = factory.criarGuincho();
     }
 
     public void RealizarAtendimento()
     {
-        _guincho.Socorrer(_veiculo);
+        _guincho.socorrer(_veiculo);
     }
 
-    public static AutoSocorro CriarAutoSocorro(Veiculo veiculo) throws Exception
+    public static AutoSocorro criarAutoSocorro(Veiculo veiculo) throws Exception
     {
         switch (veiculo.getPorte())
         {

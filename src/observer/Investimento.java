@@ -23,28 +23,28 @@ public abstract class Investimento {
 			return;
 
 		this.valor = valor;
-		Notificar();
+		notificar();
 	}
 
 	public String getSimbolo() {
 		return simbolo;
 	}
 
-	public void Subscribe(Observador observador) {
+	public void subscribe(Observador observador) {
 		observadores.add(observador);
 		System.out.println("Notificando que " + observador.getNome() + " está recebendo atualizãções de " + simbolo);
 	}
 
-	public void UnSubscribe(Observador observador) {
+	public void unSubscribe(Observador observador) {
 		observadores.remove(observador);
 		System.out.println("Notificando que " + observador.getNome() + "NÃO está recebendo atualizãções de " + simbolo);
 	}
 
-	private void Notificar()
+	private void notificar()
     {
         for (Observador investidor : observadores)
         {
-        	investidor.Notificar(this);
+        	investidor.notificar(this);
         }
 
         System.out.println("");

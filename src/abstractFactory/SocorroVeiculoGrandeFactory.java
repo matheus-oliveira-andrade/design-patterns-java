@@ -4,12 +4,12 @@ package abstractFactory;
 public class SocorroVeiculoGrandeFactory extends AutoSocorroFactory {
 
 	@Override
-	public Guincho CriarGuincho() throws Exception {
-		return GuinchoCreator.Criar(Porte.Grande);
+	public Guincho criarGuincho() throws Exception {
+		return GuinchoCreator.criar(Porte.Grande);
 	}
 
 	@Override
-	public Veiculo CriarVeiculo(String modelo, Porte porte) throws Exception {
+	public Veiculo criarVeiculo(String modelo, Porte porte) throws Exception {
 		return VeiculoCreator.Criar(modelo, porte);
 	}
 

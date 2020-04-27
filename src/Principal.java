@@ -40,23 +40,23 @@ public class Principal {
 			switch (escolha) {
 			case 1:
 				// Abstract Factory
-				ExecucaoAbstractFactory.Executar();				
+				ExecucaoAbstractFactory.executar();				
 				break;
 			case 2:
 				// Factory Method
-				ExecucaoFactoryMethod.Executar();
+				ExecucaoFactoryMethod.executar();
 				break;
 			case 3:
 				// Facade
-				ExecucaoFacade.Executar();
+				ExecucaoFacade.executar();
 				break;
 			case 4:
 				// Iterator
-				ExecucaoIterator.Executar();
+				ExecucaoIterator.executar();
 				break;
 			case 5:
 				// Observer
-				ExecucaoObserver.Executar();
+				ExecucaoObserver.executar();
 				break;				
 			}	
 			
