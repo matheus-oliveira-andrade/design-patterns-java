@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-import abstractFactory.ExecucaoAbstractFactory;
-import facade.ExecucaoFacade;
-import factoryMethod.ExecucaoFactoryMethod;
-import iterator.ExecucaoIterator;
-import observer.ExecucaoObserver;
+import com.comportamental.iterator.ExecucaoIterator;
+import com.comportamental.observer.ExecucaoObserver;
+import com.criacional.abstractFactory.ExecucaoAbstractFactory;
+import com.criacional.factoryMethod.ExecucaoFactoryMethod;
+import com.estrutural.facade.ExecucaoFacade;
 
 public class Principal {
 
