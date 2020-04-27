@@ -3,6 +3,7 @@ import java.util.Scanner;
 import com.comportamental.iterator.ExecucaoIterator;
 import com.comportamental.observer.ExecucaoObserver;
 import com.criacional.abstractFactory.ExecucaoAbstractFactory;
+import com.criacional.builder.ExecucaoBuilder;
 import com.criacional.factoryMethod.ExecucaoFactoryMethod;
 import com.estrutural.facade.ExecucaoFacade;
 
@@ -12,23 +13,24 @@ public class Principal {
 
 		while (true) {			
 
-			System.out.println("---------------------- ");
-			System.out.println("   ESCOLHA UM DESIGN   ");
-			System.out.println("---------------------- ");
-			System.out.println("Padrões Criacionais    ");
-			System.out.println("---------------------- ");
-			System.out.println("1 - Abstract Factory   ");
-			System.out.println("2 - Factory Method     ");
-			System.out.println("---------------------- ");
-			System.out.println("Padrões Estruturais    ");
-			System.out.println("---------------------- ");
-			System.out.println("3 - Facade			   ");
-			System.out.println("---------------------- ");
-			System.out.println("Padrões Comportamentais");
-			System.out.println("---------------------- ");
-			System.out.println("4 - Iterator		   ");
-			System.out.println("5 - Observer		   ");
-			System.out.println("---------------------- ");
+			System.out.println("+-----------------------+");
+			System.out.println("|   ESCOLHA UM DESIGN   |");
+			System.out.println("+-----------------------+");
+			System.out.println("|Padrões Criacionais    |");
+			System.out.println("+-----------------------+");
+			System.out.println("| 1 - Abstract Factory  |");
+			System.out.println("| 2 - Factory Method    |");
+			System.out.println("| 6 - Builder           |");
+			System.out.println("+-----------------------|");
+			System.out.println("|Padrões Estruturais    |");
+			System.out.println("+-----------------------|");
+			System.out.println("| 3 - Facade            |");
+			System.out.println("+-----------------------|");
+			System.out.println("|Padrões Comportamentais|");
+			System.out.println("+-----------------------|");
+			System.out.println("| 4 - Iterator          |");
+			System.out.println("| 5 - Observer          |");
+			System.out.println("+-----------------------+");
 			System.out.println();
 			System.out.print("Escolha: ");
 
@@ -57,7 +59,10 @@ public class Principal {
 			case 5:
 				// Observer
 				ExecucaoObserver.executar();
-				break;				
+				break;
+			case 6:
+				ExecucaoBuilder.executar();
+				break;
 			}	
 			
 			System.out.println();

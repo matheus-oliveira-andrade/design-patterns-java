@@ -7,9 +7,9 @@ public class ExecucaoObserver {
 	public static void executar() {
 
 		System.out.println("+---------------------------------------------------------------+");
-		System.out.println("+--------------------- Comportamental --------------------------+");
-		System.out.println("+---------------------------------------------------------------+");
-		System.out.println("+------------------------ Observer -----------------------------+");
+		System.out.println("|--------------------- Comportamental --------------------------|");
+		System.out.println("|---------------------------------------------------------------|");
+		System.out.println("|------------------------ Observer -----------------------------|");
 		System.out.println("+---------------------------------------------------------------+");
 		System.out.println();
 		

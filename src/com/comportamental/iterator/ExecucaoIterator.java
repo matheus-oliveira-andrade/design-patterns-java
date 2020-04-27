@@ -5,9 +5,9 @@ public class ExecucaoIterator {
 	public static void executar() {
 		
 		System.out.println("+---------------------------------------------------------------+");
-		System.out.println("+--------------------- Comportamental --------------------------+");
-		System.out.println("+---------------------------------------------------------------+");
-		System.out.println("+------------------------ Iterator -----------------------------+");
+		System.out.println("|--------------------- Comportamental --------------------------|");
+		System.out.println("|---------------------------------------------------------------|");
+		System.out.println("|------------------------ Iterator -----------------------------|");		
 		System.out.println("+---------------------------------------------------------------+");
 		System.out.println();
 		
