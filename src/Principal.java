@@ -6,6 +6,7 @@ import com.criacional.abstractFactory.ExecucaoAbstractFactory;
 import com.criacional.builder.ExecucaoBuilder;
 import com.criacional.factoryMethod.ExecucaoFactoryMethod;
 import com.criacional.singleton.ExecucaoSingleton;
+import com.estrutural.adapter.ExecucaoAdapter;
 import com.estrutural.facade.ExecucaoFacade;
 
 public class Principal {
@@ -29,6 +30,7 @@ public class Principal {
 			System.out.println("|Padrões Estruturais    |");
 			System.out.println("+------------------------|");
 			System.out.println("| 3 - Facade             |");
+			System.out.println("| 8 - Adapter            |");
 			System.out.println("+------------------------|");
 			System.out.println("|Padrões Comportamentais|");
 			System.out.println("+------------------------|");
@@ -72,6 +74,9 @@ public class Principal {
 				break;
 			case 7:
 				ExecucaoSingleton.executar();
+				break;
+			case 8:
+				ExecucaoAdapter.executar();
 				break;
 			}
 
