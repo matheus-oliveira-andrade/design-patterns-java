@@ -8,7 +8,9 @@ public class TransacaoService {
 		this.logger = logger;
 	}
 
-	public void realizarOperacao() {				
+	public void realizarOperacao() {	
+		// Lógica
+		
 		logger.log("Transação realizada com sucesso!");
 	}
 }
